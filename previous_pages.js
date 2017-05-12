@@ -47,6 +47,13 @@ if (combined_pages.length > 0) {
 }
 
 /**
+ * Limit our previous_pages array to 20 items.
+ */
+if(combined_pages.length > 20) {
+  combined_pages.shift();
+}
+
+/**
  * Set/update our cookie.
  */
 Cookies.set('previous_pages', combined_pages);
