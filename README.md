@@ -4,5 +4,6 @@ This JavaScript library builds an array of the page title and URL of every page 
 ## Depenedencies
 https://github.com/js-cookie/js-cookie
 
-* get_previous_page() - Returns the last page as an object with `name` and `url`.
+## Functions
+* get_previous_page(int index) - Returns the previous page, or the previous page with the given index.
 * clear_previous_pages() - Removes the `previous_pages` cookie.
