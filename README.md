@@ -9,6 +9,12 @@ https://github.com/js-cookie/js-cookie
 * `get_previous_pages()` - Returns all previous pages.
 * `clear_previous_pages()` - Removes the `previous_pages` cookie.
 
+## Example Usage
+```javascript
+var previous_page = get_previous_page();
+console.log('Title: '+previous_page.title+' URL: '+previous_page.url);
+```
+
 ## Notes
 Out of the box, this library gets the page title, and takes the part before ` | `. If this doesn't suit your needs, change the following:
 ```javascript
