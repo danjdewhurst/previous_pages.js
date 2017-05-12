@@ -66,17 +66,21 @@ Cookies.set('previous_pages', combined_pages);
  * Get the previous page.
  */
 function get_previous_page(index = null) {
+  previous_pages = Cookies.getJSON('previous_pages');
+
   if(index != null) {
     return previous_pages[index];
   }
 
-  return previous_pages[previous_pages.length - 1];
+  return previous_pages[previous_pages.length - 2];
 }
 
 /**
  * Get all previous pages.
  */
 function get_previous_pages() {
+  previous_pages = Cookies.getJSON('previous_pages');
+
   return previous_pages;
 }
 
