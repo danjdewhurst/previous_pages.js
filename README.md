@@ -23,3 +23,4 @@ var new_page = {
   title: document.title.split(' | ')[0], // <-------
 };
 ```
+The array we store as a cookie is limited to 20 items to stop the cookie from becoming huge.
