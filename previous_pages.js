@@ -67,6 +67,13 @@ function get_previous_page(var index = null) {
 }
 
 /**
+ * Get all previous pages.
+ */
+function get_all_previous_pages() {
+  return previous_pages;
+}
+
+/**
  * Clear the cookie.
  */
 function clear_previous_pages() {
