@@ -58,10 +58,12 @@ Cookies.set('previous_pages', combined_pages);
 /**
  * Get the previous page.
  */
-function get_previous_page() {
-  var last_index = previous_pages.length;
+function get_previous_page(var index = null) {
+  if(index != null) {
+    return previous_pages[index];
+  }
 
-  return previous_pages[last_index];
+  return previous_pages[previous_pages.length];
 }
 
 /**
