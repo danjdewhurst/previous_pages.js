@@ -63,7 +63,7 @@ function get_previous_page(index = null) {
     return previous_pages[index];
   }
 
-  return previous_pages[previous_pages.length];
+  return previous_pages[previous_pages.length - 1];
 }
 
 /**
