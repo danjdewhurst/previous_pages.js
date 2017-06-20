@@ -65,10 +65,10 @@ Cookies.set('previous_pages', combined_pages);
 /**
  * Get the previous page.
  */
-function get_previous_page(index = null) {
+function get_previous_page(index) {
   previous_pages = Cookies.getJSON('previous_pages');
 
-  if(index != null) {
+  if(index !== null) {
     return previous_pages[index];
   }
 
